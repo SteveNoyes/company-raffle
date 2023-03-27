@@ -1,0 +1,266 @@
+/* General Styles */
+/* Colors */
+:root {
+  --dark-blue: #5a9bc9;
+  --lite-blue: #87c1e9;
+  --purple: #5d4586;
+  --green: #acce5a;
+  --teal: #78c6cd; 
+  --bg: #dee0e4;
+  --white: #ffffff;
+  --black: #000000;
+
+  --greenA: #abce5adc;
+}
+
+/* Font Family */
+/* font-family: 'Nunito', sans-serif, monospace; */
+/* font-family: 'Open Sans', sans-serif, monospace; */
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color:var(--bg);
+}
+p {
+  font-family: 'Open Sans', sans-serif, monospace;
+  color: var(--black);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif, monospace;
+}
+ul {
+  list-style: none;
+}
+/* Register Page */
+.register {
+  width: 400px;
+  background-color: var(--white);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+}
+.register h1 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid var(--bg);
+}
+.register form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.register form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--teal);
+  color: var(--white);
+}
+.register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+  width: 310px;
+  height: 50px;
+  border: 1px solid var(--bg);
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.register form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: var(--dark-blue);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--white);
+  transition: background-color 0.2s;
+}
+.register form input[type="submit"]:hover {
+  background-color: var(--lite-blue);
+  transition: background-color 0.2s;
+}
+
+/* Login Page */
+.login {
+  width: 400px;
+  background-color: var(--white);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+}
+.login h1 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid var(--bg);
+}
+.login form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.login form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--teal);
+  color: var(--white);
+}
+.login form input[type="password"], .login form input[type="text"] {
+  width: 310px;
+  height: 50px;
+  border: 1px solid var(--bg);
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+.login form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: var(--dark-blue);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--white);
+  transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+  background-color: var(--lite-blue);
+  transition: background-color 0.2s;
+}
+
+/* Homepage Once logged In */
+.navtop {
+	background-color: var(--dark-blue);
+  color: var(--white);
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: var(--white);
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: var(--white);
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: var(--bg);
+}
+body.loggedin {
+	background-color: var(--bg);
+}
+.content {
+	width: 90%;
+	margin: 0 auto;
+  text-align: center;
+}
+.content h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	color: var(--dark-blue);
+}
+.content > p, .content > div {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: var(--white);
+}
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: var(--purple);
+	padding-right: 15px;
+}
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+.submitTickets {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+  transition: all .2s ease-in-out;
+}
+.submitTickets:hover {
+  background-color: var(--lite-blue);
+  transform: scale(1.1); 
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--green);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: auto;
+}
+#counter0, #counter1, #counter2, #counter3, #counter4, #counter5, #counter6, #counter7, #counter8 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.button {
+  width: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: var(--greenA);
+  transform: scale(1.1); 
+  cursor: pointer;
+  color: var(--white);
+}
+.selectWinnerBtns {
+  flex-wrap: wrap;
+}
